@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversão de Moeda</title>
+    <link rel="stylesheet" href="./public/styles/global.css" />
+    <script src="./public/script/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Conversor de Moeda</h1>
+      <form id="form-conversao">
+        <div class="input-group">
+          <label for="valor">Valor:</label>
+          <input
+            type="number"
+            id="valor"
+            placeholder="Digite o valor"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="moeda-inicial">Moeda Inicial:</label>
+          <select id="moeda-inicial" required>
+            <option value="USD">USD (Dólar)</option>
+            <option value="EUR">EUR (Euro)</option>
+            <option value="BRL">BRL (Real)</option>
+            <option value="GBP">GBP (Libra)</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="moeda-destino">Moeda de Destino:</label>
+          <select id="moeda-destino" multiple required>
+            <option value="EUR">EUR (Euro)</option>
+            <option value="BRL">BRL (Real)</option>
+            <option value="GBP">GBP (Libra)</option>
+            <option value="JPY">JPY (Iene)</option>
+          </select>
+        </div>
+        <button type="submit" id="converter-btn">Converter</button>
+      </form>
+      <div id="resultados" class="resultados">
+        <h2>Resultados:</h2>
+        <ul id="lista-resultados"></ul>
+      </div>
+    </div>
+  </body>
+</html>

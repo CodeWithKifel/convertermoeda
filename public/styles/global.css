@@ -1,0 +1,90 @@
+/* Estilos gerais */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contêiner principal */
+.container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilo do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 16px;
+  color: #333;
+}
+
+input, select, button {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Estilo da lista de resultados */
+.resultados {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+#lista-resultados {
+  list-style: none;
+  padding: 0;
+}
+
+#lista-resultados li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+#lista-resultados li .moeda {
+  font-weight: bold;
+}
